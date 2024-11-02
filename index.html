@@ -6,26 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Олимпиадные задачи</title>
     <style>
-        table,
-        tr,
-        td,
-        th {
+        div{
+            width: 1600px;
+            margin: auto;
+        }
+         tr, td, th {
+            padding-left: 15px;
+            font-size: 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width:100%;
             border-width: 1px;
             border-color: black;
             border-style: solid;
         }
-
-        table {
-            width: 98%;
-
+        tr:nth-child(2n) {
+            background-color: rgb(213, 245, 224);
         }
 
+        tr:nth-child(2n+1) {
+           background-color: rgb(190, 225, 202);
+        }
         table tr:nth-child(n+2) {
             counter-increment: row-num;
         }
 
+        th{
+            background-color: rgb(3, 136, 138);
+            color: rgb(246, 255, 0);
+            
+        }
+
         table tr td:first-child::before {
             content: counter(row-num) "";
+        }
+
+        a{
+            text-decoration: none;
         }
     </style>
     <base target="_blank">
