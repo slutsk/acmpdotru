@@ -19,9 +19,9 @@
 
         table {
             width:100%;
-            border-width: 1px;
-            border-color: black;
-            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(0, 0, 0);
+            border-style:solid ;
         }
         tr:nth-child(2n) {
             background-color: rgb(213, 245, 224);
@@ -43,17 +43,20 @@
         table tr td:first-child::before {
             content: counter(row-num) "";
         }
-
+        tr:hover {
+             background-color: rgb(125, 214, 232);
+        }
         a{
             text-decoration: none;
+            color:black;
         }
+       
     </style>
     <base target="_blank">
 </head>
 
 <body>
     <div>
-        <h2>Простые задачи</h2>
         <table>
             <tr>
                 <th>№</th>
