@@ -49,3 +49,11 @@ a {
     text-decoration: none;
     color: black;
 }
+.accepted1{
+	background-color:orange;
+	width:9%
+}
+.accepted2{
+	background-color:darkOrange;
+	width:9%
+}
