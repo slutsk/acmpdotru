@@ -37,9 +37,6 @@ th {
 
 }
 
-table tr td:first-child::before {
-    content: counter(row-num) "";
-}
 
 tr:hover {
     background-color: rgb(125, 214, 232);
@@ -63,3 +60,4 @@ thead {
 	top: 0;
 	z-index: 1;
 }
+
