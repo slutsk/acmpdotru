@@ -74,3 +74,55 @@ thead {
    font-size:30px;
    color:white; 
 }
+.W{
+   color: white;
+}
+.G1{
+    color:#ccc;
+}
+
+.G2{
+    color:#aaa;
+}
+.G3{
+    color:#777;
+}
+.G4{
+    color:#444;
+}
+.GN1{
+   color:#9f9;
+}
+.GN2{
+    color:#3f3;
+}
+.GN3{
+    color:#0a0;
+}
+.GN4{
+    color:#050; 
+}
+.B1{
+   color:#99f;
+}
+.B2{
+    color:#33f;
+ }
+ .B3{
+    color:#11e;
+ }
+ .B4{
+    color:#005;
+ }
+ .R1{
+    color:#f99;
+ }
+ .R2{
+    color: #f44;
+ }
+.R3{
+    color:#500;
+ }
+ .BL{
+    color:black;
+ }
