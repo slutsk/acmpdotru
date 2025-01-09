@@ -58,11 +58,11 @@ a {
 }
 
 .lastUpdate{
-	position: static;
-	top: 5px;
-	left:20px;
-	z-index: 2;
-	color:#888;
+	color:#bbb;
+	float:left;
+	width:695px;
+	background-color: black;
+	padding-left: 5px;
 }
 
 thead { 
@@ -77,28 +77,69 @@ thead {
 .B0{
    color: white;
 }
+.rang_colors{
+	width:900px;
+	float: right;
+	background-color:black;
+}
+div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
+	width:111px;
+	color: black;
+	text-align: center;
+	float: right;
+	
+}
+.CL0{
+   background-color:white;
+}
 .B1{
 	color: #bbb;
+}
+.CL1{
+   background-color:#bbb;
 }
 .B2{
     color:lime;
 }
-
+.CL2{
+	background-color:lime;
+}
 .B3{
 	color:yellow;
+}
+.CL3{
+	background-color:yellow;
 }
 .B4{
 	color:orange;
 }
+.CL4{
+	background-color:orange;
+}
 .B5{
 	color:violet;
+}
+.CL5{
+	background-color:violet;
 }
 .B6{
    color: blue;
 }
+.CL6{
+	background-color:blue;
+	color:white;
+}
 .B7{
 	color: brown;
 }
+.CL7{
+	background-color:brown;
+	color:white;
+}
 .B8{
 	color: black;
+}
+.CL8{
+	background-color:black;
+	color:white;
 }
