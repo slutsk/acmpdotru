@@ -117,10 +117,11 @@ div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
 	background-color:orange;
 }
 .B5{
-	color:violet;
+	color:brown;
 }
 .CL5{
-	background-color:violet;
+	background-color:brown;
+	color:white;
 }
 .B6{
    color: blue;
@@ -130,10 +131,10 @@ div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
 	color:white;
 }
 .B7{
-	color: brown;
+	color: red;
 }
 .CL7{
-	background-color:brown;
+	background-color: red;
 	color:white;
 }
 .B8{
