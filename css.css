@@ -1,4 +1,4 @@
-div {
+.main {
     width: 1600px;
     margin: auto;
 }
@@ -6,7 +6,6 @@ div {
 tr,
 td,
 th {
-    padding-left: 15px;
     font-size: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -14,47 +13,78 @@ th {
 
 table {
     width: 100%;
-    border-width: 2px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-	color:black;
-	font-family:serif;
-}
-
-tr:nth-child(2n) {
-    background-color: rgb(213, 245, 224);
-}
-
-tr:nth-child(2n+1) {
-    background-color: rgb(190, 225, 202);
-}
-
-table tr:nth-child(n+2) {
-    counter-increment: row-num;
 }
 
 th {
     background-color: rgb(3, 136, 138);
     color: rgb(246, 255, 0);
-
-}
-
-
-tr:hover {
-    background-color: rgb(125, 214, 232);
 }
 
 a {
     text-decoration: none;
     color: black;
 }
-.accepted1{
-	background-color:orange;
-	width:9%
+
+.cl09 > a, .cl08 > a  {
+    text-decoration: none;
+    color: white;
 }
-.accepted2{
-	background-color:darkOrange;
-	width:9%
+
+
+thead { 
+    position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+
+.circle{
+   background-color: orange;
+   border: 2px;
+   border-color:black;
+   border-style: solid;
+   margin-bottom: 10px;;
+   border-radius: 50px;
+   text-align:center;
+}
+
+.cl01{
+	background-color: #eee;
+}
+
+.cl02{
+	background-color: #999;
+}
+
+.cl03{
+	background-color: #afa;
+}
+
+.cl04{
+	background-color: #0f0;
+}
+
+.cl05{
+	background-color: #aaf;
+}
+
+.cl06{
+	background-color: #ff0;
+}
+
+.cl07{
+	background-color: #0ff;
+}
+
+.cl08{
+	background-color: #f0f;
+}
+
+.cl09{
+	background-color: #f00;
+	color: #fff;
+}
+.second_table {
+  vertical-align: top;
 }
 
 .lastUpdate{
@@ -65,29 +95,16 @@ a {
 	padding-left: 5px;
 }
 
-thead { 
-    position: sticky;
-	top: 0;
-	z-index: 1;
-}
-.balls{
-   font-size:30px;
-   color:white; 
-}
-.B0{
-   color: white;
-}
-.rang_colors{
-	width:900px;
-	float: right;
-	background-color:black;
-}
 div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
 	width:111px;
 	color: black;
 	text-align: center;
 	float: right;
 	
+}
+
+.B0{
+	color: #fff;
 }
 .CL0{
    background-color:white;
@@ -135,7 +152,7 @@ div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
 }
 .CL7{
 	background-color: red;
-	color:white;
+	color:black;
 }
 .B8{
 	color: black;
@@ -143,4 +160,10 @@ div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
 .CL8{
 	background-color:black;
 	color:white;
+}
+
+.rang_colors{
+	width:900px;
+	float: right;
+	background-color:black;
 }
