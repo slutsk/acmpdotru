@@ -95,8 +95,8 @@ thead {
 	padding-left: 5px;
 }
 
-div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
-	width:111px;
+div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8, .CL9{
+	width:100px;
 	color: black;
 	text-align: center;
 	float: right;
@@ -161,6 +161,16 @@ div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8{
 	background-color:black;
 	color:white;
 }
+
+.B9{
+	color: #afa;
+}
+
+.CL9{
+	background-color:#afa;
+	color:black;
+}
+
 
 .rang_colors{
 	width:900px;
