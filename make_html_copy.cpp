@@ -70,7 +70,7 @@ void build_person(vector<PERSON> &vc, int procent[])
 void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
 {
      ifstream readFile("header.html");
-     ofstream writeFile("page.html");
+     ofstream writeFile("index.html");
 
      string str;
      time_t t = time(nullptr);
@@ -170,3 +170,4 @@ int main()
 
     return 0;
 }
+
