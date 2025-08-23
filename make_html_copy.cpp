@@ -12,7 +12,7 @@ struct ZADACHA{
     string link; //ssilka na zadachu
 };
 
-//postroenie massiva so vsemi zadachami
+postroenie massiva so vsemi zadachami
 void build_zadacha(vector<ZADACHA> & vc, int a[]){
     ifstream readLinks("links.txt");
     int number = 1;
@@ -183,6 +183,7 @@ int main()
 
     return 0;
 }
+
 
 
 
