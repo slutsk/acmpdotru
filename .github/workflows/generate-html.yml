@@ -1,1 +1,52 @@
+name: Генерация и публикация index.html
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 21 * * *' # ежедневно в 00:00 по Минску
+
+jobs:
+  build-run-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Клонируем репозиторий
+      uses: actions/checkout@v3
+
+    - name: 🐍 Устанавливаем Python
+      run: sudo apt update && sudo apt install python3 -y
+
+    - name: 🚀 Запускаем make_person.py
+      run: python3 make_person.py
+
+    - name: 📂 Проверяем наличие person.txt
+      run: |
+        if [ ! -f person.txt ]; then
+          echo "❌ Файл person.txt не найден!"
+          exit 1
+        fi
+
+    - name: 🛠 Устанавливаем компилятор C++
+      run: sudo apt install g++ -y
+
+    - name: 🧱 Компилируем make_html.cpp
+      run: g++ make_html.cpp -o make_html
+
+    - name: 🧾 Запускаем make_html
+      run: ./make_html
+
+    - name: 📂 Проверяем наличие public/index.html
+      run: |
+        if [ ! -f public/index.html ]; then
+          echo "❌ Файл index.html не найден!"
+          exit 1
+        fi
+
+    - name: 🌐 Публикуем на GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
 
