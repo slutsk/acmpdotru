@@ -1,4 +1,4 @@
-name: Генерация person.txt из make_person.py
+name: Генерация index.html из make_person.py и make_html_copy.cpp
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
     - cron: '0 21 * * *' # ежедневно в 00:00 по Минску (UTC+3)
 
 jobs:
-  generate-person:
+  build-run-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,20 +28,36 @@ jobs:
           exit 1
         fi
 
-    - name: 📄 Показываем содержимое person.txt
-      run: cat person.txt
+    - name: 🛠 Устанавливаем компилятор C++
+      run: sudo apt install g++ -y
+
+    - name: 🧱 Компилируем make_html_copy.cpp
+      run: g++ make_html_copy.cpp -o make_html_copy
+
+    - name: 🧾 Запускаем make_html_copy
+      run: ./make_html_copy
+
+    - name: 📂 Проверяем наличие index.html
+      run: |
+        if [ ! -f index.html ]; then
+          echo "❌ Файл index.html не найден!"
+          exit 1
+        fi
+
+    - name: 📄 Показываем содержимое index.html
+      run: cat index.html
 
     - name: ⚙️ Настраиваем Git
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
 
-    - name: 📤 Добавляем и пушим person.txt (если изменился)
+    - name: 📤 Добавляем и пушим person.txt и index.html (если изменились)
       run: |
-        git add person.txt
+        git add person.txt index.html
         if git diff --cached --quiet; then
-          echo "🟡 Нет изменений в person.txt — коммит не требуется"
+          echo "🟡 Нет изменений — коммит не требуется"
         else
-          git commit -m "✅ Обновлён person.txt"
+          git commit -m "✅ Обновлены person.txt и index.html"
           git push
         fi
