@@ -86,7 +86,8 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
                     <<setfill('0') << setw(2) << (now->tm_min)
                     << "</div>"<< "\n";
 
-         else if(str == "<thead>")
+         else if (str.find("<thead>") != std::string::npos)
+
          {
              writeFile << str << "\n";
              writeFile << "<tr>" << "\n";
@@ -170,4 +171,5 @@ int main()
 
     return 0;
 }
+
 
