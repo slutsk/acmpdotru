@@ -79,7 +79,7 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
 	 tm *now = localtime(&t);
      while(getline(readFile, str))
      {
-         if(str=="<div class = \"lastUpdate\">")
+         if (str.find("<div class = \"lastUpdate\">") != std::string::npos)
                 writeFile << str << "\nLatest website update: "
                     <<setfill('0') << setw(2) << (now->tm_mday) << '.'
                     <<setfill('0') << setw(2) << (now->tm_mon+1) <<'.'
@@ -181,3 +181,4 @@ int main()
 
     return 0;
 }
+
