@@ -74,6 +74,15 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
      ifstream readFile("header.html");
      ofstream writeFile("index.html");
 
+	writeFile << str << "\nLatest website update: "
+                    <<setfill('0') << setw(2) << (now->tm_mday) << '.'
+                    <<setfill('0') << setw(2) << (now->tm_mon+1) <<'.'
+                    <<setfill('0') << setw(2) << (now->tm_year+1900) <<' '
+                    <<setfill('0') << setw(2) << (now->tm_hour) <<':'
+                    <<setfill('0') << setw(2) << (now->tm_min)
+                    << "</div>"<< "\n";
+
+
      string str;
      time_t t = time(nullptr);
 	 tm *now = localtime(&t);
@@ -181,4 +190,5 @@ int main()
 
     return 0;
 }
+
 
