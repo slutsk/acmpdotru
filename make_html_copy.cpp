@@ -34,6 +34,7 @@ void build_zadacha(vector<ZADACHA> & vc, int a[]){
 struct PERSON{
    string name;
    bool flag[2500] = {false};
+   vector<int> cnt_procent;
    int rang = 0;
    int solved_problems = 0;
    int k;//
@@ -59,6 +60,7 @@ void build_person(vector<PERSON> &vc, int procent[])
                 vc.back().solved_problems++;
                 vc.back().rang += procent[number];
                 vc.back().flag[number] = true;
+                vc.back().cnt_procent.push_back(procent[number]);
             }
 
         }
@@ -87,7 +89,6 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
                     << "</div>"<< "\n";
 
          else if (str.find("<thead>") != std::string::npos)
-
          {
              writeFile << str << "\n";
              writeFile << "<tr>" << "\n";
@@ -160,7 +161,16 @@ int main()
     build_person(person, array_of_procents);
     for(auto &x: person)
     {
-        x.k = x.rang/x.solved_problems;
+        int n = 100;
+        int mn = min((int)n, (int)x.cnt_procent.size());
+        int sum = 0;
+        sort(x.cnt_procent.rbegin(), x.cnt_procent.rend());
+        //std::cout <<x.name << " ";  
+        for(int i = 0; i < mn ; i++){
+           sum += x.cnt_procent[i];
+        }
+        x.k = sum/mn;
+        //cout << " " << x.k << "\n";
     }
     sort(person.begin(), person.end(), [](PERSON a, PERSON b){
              if(a.rang != b.rang) return a.rang > b.rang;
@@ -171,5 +181,3 @@ int main()
 
     return 0;
 }
-
-
