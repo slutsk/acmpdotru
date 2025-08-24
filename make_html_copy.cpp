@@ -76,22 +76,11 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
      string str;
      time_t t = time(nullptr);
 	 tm *now = localtime(&t);
-	
-	//УДАЛИТЬ---------------------------------------
-
-	writeFile << "\nLatest website update: "
-                    <<setfill('0') << setw(2) << (now->tm_mday) << '.'
-                    <<setfill('0') << setw(2) << (now->tm_mon+1) <<'.'
-                    <<setfill('0') << setw(2) << (now->tm_year+1900) <<' '
-                    <<setfill('0') << setw(2) << (now->tm_hour) <<':'
-                    <<setfill('0') << setw(2) << (now->tm_min);
-     //------------------------------------------------------
-
-     
+		  
      while(getline(readFile, str))
      {
-         if (str.find("<div class = \"lastUpdate\">") != std::string::npos)
-                writeFile << str << "\nLatest website update: "
+         if (str.find("lastUpdate") != std::string::npos)
+                writeFile << "<div class = \"lastUpdate\">" << "\nLatest website update: "
                     <<setfill('0') << setw(2) << (now->tm_mday) << '.'
                     <<setfill('0') << setw(2) << (now->tm_mon+1) <<'.'
                     <<setfill('0') << setw(2) << (now->tm_year+1900) <<' '
@@ -192,6 +181,7 @@ int main()
 
     return 0;
 }
+
 
 
 
