@@ -85,7 +85,7 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
                     <<setfill('0') << setw(2) << (now->tm_mon+1) <<'.'
                     <<setfill('0') << setw(2) << (now->tm_year+1900) <<' '
                     <<setfill('0') << setw(2) << (now->tm_hour+3) <<':'
-                    <<setfill('0') << setw(2) << (now->tm_min)
+                    <<setfill('0') << setw(2) << (now->tm_min) << " tasks: " <<zadacha.size()
                     << "</div>"<< "\n";
 
          else if (str.find("<thead>") != std::string::npos)
@@ -181,6 +181,7 @@ int main()
 
     return 0;
 }
+
 
 
 
