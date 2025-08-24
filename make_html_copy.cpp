@@ -84,7 +84,7 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
                     <<setfill('0') << setw(2) << (now->tm_mday) << '.'
                     <<setfill('0') << setw(2) << (now->tm_mon+1) <<'.'
                     <<setfill('0') << setw(2) << (now->tm_year+1900) <<' '
-                    <<setfill('0') << setw(2) << (now->tm_hour) <<':'
+                    <<setfill('0') << setw(2) << (now->tm_hour+3) <<':'
                     <<setfill('0') << setw(2) << (now->tm_min)
                     << "</div>"<< "\n";
 
@@ -181,6 +181,7 @@ int main()
 
     return 0;
 }
+
 
 
 
