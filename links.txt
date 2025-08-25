@@ -1061,7 +1061,7 @@
 58	https://acmp.ru/?main=task&id_task=1061
 200	https://acmp.ru/?main=task&id_task=1062
 200	https://acmp.ru/?main=task&id_task=1063
-62	https://acmp.ru/?main=task&id_task=1064
+200	https://acmp.ru/?main=task&id_task=1064
 200	https://acmp.ru/?main=task&id_task=1065
 200	https://acmp.ru/?main=task&id_task=1066
 200	https://acmp.ru/?main=task&id_task=1067
@@ -1794,7 +1794,7 @@
 42	https://acmp.ru/?main=task&id_task=1794
 36	https://acmp.ru/?main=task&id_task=1795
 11	https://acmp.ru/?main=task&id_task=1796
-17	https://acmp.ru/?main=task&id_task=1797
+200	https://acmp.ru/?main=task&id_task=1797
 13	https://acmp.ru/?main=task&id_task=1798
 21	https://acmp.ru/?main=task&id_task=1799
 67	https://acmp.ru/?main=task&id_task=1800
@@ -1940,14 +1940,14 @@
 36	https://acmp.ru/?main=task&id_task=1940
 66	https://acmp.ru/?main=task&id_task=1941
 75	https://acmp.ru/?main=task&id_task=1942
-27	https://acmp.ru/?main=task&id_task=1943
-25	https://acmp.ru/?main=task&id_task=1944
-30	https://acmp.ru/?main=task&id_task=1945
+200	https://acmp.ru/?main=task&id_task=1943
+200	https://acmp.ru/?main=task&id_task=1944
+200	https://acmp.ru/?main=task&id_task=1945
 200	https://acmp.ru/?main=task&id_task=1946
-42	https://acmp.ru/?main=task&id_task=1947
-35	https://acmp.ru/?main=task&id_task=1948
+200	https://acmp.ru/?main=task&id_task=1947
+200	https://acmp.ru/?main=task&id_task=1948
 200	https://acmp.ru/?main=task&id_task=1949
-30	https://acmp.ru/?main=task&id_task=1950
+200	https://acmp.ru/?main=task&id_task=1950
 200	https://acmp.ru/?main=task&id_task=1951
 16	https://acmp.ru/?main=task&id_task=1952
 23	https://acmp.ru/?main=task&id_task=1953
@@ -2063,4 +2063,5 @@
 39	https://acmp.ru/?main=task&id_task=2063
 70	https://acmp.ru/?main=task&id_task=2064
 88	https://acmp.ru/?main=task&id_task=2065
+
 
