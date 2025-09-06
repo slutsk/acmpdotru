@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '0 20 * * *' # ежедневно в 00:00 по Минску (UTC+3)
+    - cron: '0 19 * * *' # ежедневно в 22:00 по Минску (UTC+3)
 
 jobs:
   build-run-deploy:
