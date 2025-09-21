@@ -38,6 +38,7 @@ struct PERSON{
    int rang = 0;
    int solved_problems = 0;
    int k;//
+   int mx = 0;
 };
 
 void build_person(vector<PERSON> &vc, int procent[])
@@ -111,7 +112,7 @@ void build_page(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
                  writeFile << x.name;
                  writeFile << "<br>" << x.solved_problems;
                  writeFile << "<br>" << x.rang; 
-                 writeFile << "<br>" << x.k << "</th>" << "\n";
+                 writeFile << "<br>" << x.k <<" (" << x.mx <<")"<< "</th>" << "\n";
              }
              writeFile << "</tr></thead>" << "\n";
              writeFile << "<tr>"  << "\n";
@@ -170,6 +171,8 @@ int main()
            sum += x.cnt_procent[i];
         }
         x.k = sum/mn;
+        if(x.cnt_procent.size())
+             x.mx = x.cnt_procent[0];
         //cout << " " << x.k << "\n";
     }
     sort(person.begin(), person.end(), [](PERSON a, PERSON b){
@@ -181,7 +184,6 @@ int main()
 
     return 0;
 }
-
 
 
 
