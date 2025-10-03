@@ -1,8 +1,8 @@
 import requests
 import chardet
 import re
-user_name = ['* V A', '* Гр Кл', '* Гч Кл', '* См Дл',  '* Пч Дд', '* Ач Ер', '* Да Пр', '* Во Гб', '* Sn Pa', '* Кй Нй', '* Хв Мй']
-user_id   = [  92960,    463065,    488679,    486774,     529387,    467234,    530286,    435953, 541052, 546179, 549344]
+user_name = ['* V A', '* Гр Кл', '* Гч Кл', '* См Дл',  '* Пч Дд', '* Ач Ер', '* Да Пр', '* Во Гб', '* Sn Pa', '* Кй Нй', '* Хв Мй', '* Бч Ай']
+user_id   = [  92960,    463065,    488679,    486774,     529387,    467234,    530286,    435953, 541052, 546179, 549344, 550727]
 numbers   = []
 for ind in range(len(user_name)):
     url = "https://acmp.ru/index.asp?main=user&id="+str(user_id[ind])  # Замените на нужный URL
@@ -47,6 +47,7 @@ with open("person.txt", "w", encoding='utf-8') as file:
     file.write(' '.join(numbers))
 
 print(f"Числа из строк, следующих за шаблоном <b class=btext>Решенные задачи (число):</b>, успешно сохранены в файл numbers.txt")
+
 
 
 
