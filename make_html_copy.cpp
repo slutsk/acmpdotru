@@ -170,7 +170,7 @@ int main()
         for(int i = 0; i < mn ; i++){
            sum += x.cnt_procent[i];
         }
-        x.k = sum/mn;
+        x.k = sum ? sum/mn:0;
         if(x.cnt_procent.size())
              x.mx = x.cnt_procent[0];
         //cout << " " << x.k << "\n";
@@ -184,6 +184,7 @@ int main()
 
     return 0;
 }
+
 
 
 
