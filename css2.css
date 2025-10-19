@@ -13,7 +13,35 @@ th {
 
 table {
     width: 100%;
+	border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+	color:black;
+	font-family:serif;
 }
+
+tr:nth-child(2n) {
+    background-color: rgb(213, 245, 224);
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(190, 225, 202);
+}
+
+table tr:nth-child(n+2) {
+    counter-increment: row-num;
+}
+
+tr:hover {
+    background-color: rgb(125, 214, 232);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 th {
     background-color: rgb(3, 136, 138);
@@ -176,4 +204,13 @@ div .CL0, .CL1, .CL2, .CL3, .CL4, .CL5, .CL6, .CL7, .CL8, .CL9{
 	width:900px;
 	float: right;
 	background-color:black;
+}
+
+.accepted1{
+	background-color:orange;
+	
+}
+.accepted2{
+	background-color:darkOrange;
+	
 }
