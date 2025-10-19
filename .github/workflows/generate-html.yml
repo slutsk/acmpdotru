@@ -1,4 +1,4 @@
-name: Генерация index.html из make_person.py и make_html_copy.cpp
+name: Генерация index.html и index2.html из make_person.py и make_html_copy.cpp
 
 on:
   workflow_dispatch:
@@ -44,20 +44,30 @@ jobs:
           exit 1
         fi
 
+    - name: 📂 Проверяем наличие index2.html
+      run: |
+        if [ ! -f index2.html ]; then
+          echo "❌ Файл index2.html не найден!"
+          exit 1
+        fi
+
     - name: 📄 Показываем содержимое index.html
       run: cat index.html
+
+    - name: 📄 Показываем содержимое index2.html
+      run: cat index2.html
 
     - name: ⚙️ Настраиваем Git
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
 
-    - name: 📤 Добавляем и пушим person.txt и index.html (если изменились)
+    - name: 📤 Добавляем и пушим person.txt, index.html и index2.html (если изменились)
       run: |
-        git add person.txt index.html
+        git add person.txt index.html index2.html
         if git diff --cached --quiet; then
           echo "🟡 Нет изменений — коммит не требуется"
         else
-          git commit -m "✅ Обновлены person.txt и index.html"
+          git commit -m "✅ Обновлены person.txt, index.html и index2.html"
           git push
         fi
