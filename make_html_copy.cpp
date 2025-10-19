@@ -165,7 +165,7 @@ void build_page20(vector<PERSON> &vc, vector <ZADACHA> &zadacha)
         << "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" << '\n'
         << "<title>Олимпиадные задачи</title>" << "\n"
         << "<base target=\"_blank\">" << "\n"
-        << "<link rel=\"stylesheet\" href=\"css2.css\">" << '\n'
+        << "<link rel=\"stylesheet\" href=\"css1.css\">" << '\n'
         << "</head>" << '\n'
         << "<body><div class = \"main\">" << '\n' << "<table>" << '\n'
         << "<div class = \"lastUpdate\">" << "\nLatest website update: "
@@ -273,3 +273,4 @@ int main()
 
     return 0;
 }
+
