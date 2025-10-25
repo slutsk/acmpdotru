@@ -245,8 +245,9 @@ int main()
 	vector<ZADACHA> zadacha;
 	build_zadacha(zadacha, array_of_procents);
 	sort(zadacha.begin(), zadacha.end(), [](ZADACHA x, ZADACHA y){
-		if(x.procent != y.procent) return x.procent < y.procent;});
+		if(x.procent != y.procent) return x.procent < y.procent;
 	    else return x.number < y.number;
+		});
 
     vector<PERSON> person;
     build_person(person, array_of_procents);
@@ -275,5 +276,6 @@ int main()
 
     return 0;
 }
+
 
 
