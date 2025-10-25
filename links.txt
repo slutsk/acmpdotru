@@ -2497,33 +2497,3 @@
 200	https://acmp.ru/?main=task&id_task=2497
 200	https://acmp.ru/?main=task&id_task=2498
 200	https://acmp.ru/?main=task&id_task=2499
-200	https://acmp.ru/?main=task&id_task=2500
-200	https://acmp.ru/?main=task&id_task=2501
-200	https://acmp.ru/?main=task&id_task=2502
-200	https://acmp.ru/?main=task&id_task=2503
-200	https://acmp.ru/?main=task&id_task=2504
-200	https://acmp.ru/?main=task&id_task=2505
-200	https://acmp.ru/?main=task&id_task=2506
-200	https://acmp.ru/?main=task&id_task=2507
-200	https://acmp.ru/?main=task&id_task=2508
-200	https://acmp.ru/?main=task&id_task=2509
-200	https://acmp.ru/?main=task&id_task=2510
-200	https://acmp.ru/?main=task&id_task=2511
-200	https://acmp.ru/?main=task&id_task=2512
-200	https://acmp.ru/?main=task&id_task=2513
-200	https://acmp.ru/?main=task&id_task=2514
-200	https://acmp.ru/?main=task&id_task=2515
-200	https://acmp.ru/?main=task&id_task=2516
-200	https://acmp.ru/?main=task&id_task=2517
-200	https://acmp.ru/?main=task&id_task=2518
-200	https://acmp.ru/?main=task&id_task=2519
-200	https://acmp.ru/?main=task&id_task=2520
-200	https://acmp.ru/?main=task&id_task=2521
-200	https://acmp.ru/?main=task&id_task=2522
-200	https://acmp.ru/?main=task&id_task=2523
-
-
-
-
-
-
