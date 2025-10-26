@@ -2221,8 +2221,8 @@
 8	https://acmp.ru/?main=task&id_task=2221
 26	https://acmp.ru/?main=task&id_task=2222
 25	https://acmp.ru/?main=task&id_task=2223
-200	https://acmp.ru/?main=task&id_task=2224
-200	https://acmp.ru/?main=task&id_task=2225
+28	https://acmp.ru/?main=task&id_task=2224
+35	https://acmp.ru/?main=task&id_task=2225
 200	https://acmp.ru/?main=task&id_task=2226
 200	https://acmp.ru/?main=task&id_task=2227
 200	https://acmp.ru/?main=task&id_task=2228
@@ -2497,3 +2497,4 @@
 200	https://acmp.ru/?main=task&id_task=2497
 200	https://acmp.ru/?main=task&id_task=2498
 200	https://acmp.ru/?main=task&id_task=2499
+
