@@ -2032,7 +2032,7 @@
 200	https://acmp.ru/?main=task&id_task=2032
 200	https://acmp.ru/?main=task&id_task=2033
 200	https://acmp.ru/?main=task&id_task=2034
-200	https://acmp.ru/?main=task&id_task=2035
+26	https://acmp.ru/?main=task&id_task=2035
 200	https://acmp.ru/?main=task&id_task=2036
 200	https://acmp.ru/?main=task&id_task=2037
 20	https://acmp.ru/?main=task&id_task=2038
@@ -2497,4 +2497,5 @@
 200	https://acmp.ru/?main=task&id_task=2497
 200	https://acmp.ru/?main=task&id_task=2498
 200	https://acmp.ru/?main=task&id_task=2499
+
 
