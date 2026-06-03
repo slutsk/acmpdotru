@@ -1,8 +1,8 @@
 import requests
 import chardet
 import re
-user_name = ['* V A', '* Гр Кл', '* Гч Кл',  '* Пч Дд', '* Да Пр', '* Хв Мй', '* Бч Ай', '* Ке фир' ]
-user_id   = [  92960,    463065,    488679,     529387,   530286,    549344,    550727, 576370 ]
+user_name = ['* V A', '* Гр Кл', '* Гч Кл',  '* Пч Дд', '* Да Пр', '* Хв Мй', '* Бч Ай' ]
+user_id   = [  92960,    463065,    488679,     529387,   530286,    549344,    550727 ]
 numbers   = []
 for ind in range(len(user_name)):
     url = "https://acmp.ru/index.asp?main=user&id="+str(user_id[ind])  # Замените на нужный URL
