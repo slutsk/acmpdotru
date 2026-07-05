@@ -2232,7 +2232,7 @@
 47	https://acmp.ru/?main=task&id_task=2232
 66	https://acmp.ru/?main=task&id_task=2233
 200	https://acmp.ru/?main=task&id_task=2234
-200	https://acmp.ru/?main=task&id_task=2235
+26	https://acmp.ru/?main=task&id_task=2235
 200	https://acmp.ru/?main=task&id_task=2236
 200	https://acmp.ru/?main=task&id_task=2237
 200	https://acmp.ru/?main=task&id_task=2238
