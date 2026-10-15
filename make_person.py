@@ -1,7 +1,7 @@
 import requests
 import chardet
 import re
-user_name = ['* V A', '* Гр Кл', '* Гч Кл',  '* Пч Дд',  '* Хв Мй', '* Бч Ай', 'Лрь Мий' ]
+user_name = ['* V A', '* Гр Кл', '* Гч Кл',  '* Пч Дд',  '* Хв Мй', '* Бч Ай', '* Лрь Мий' ]
 user_id   = [  92960,    463065,    488679,     529387,    549344,    550727, 328447 ]
 numbers   = []
 for ind in range(len(user_name)):
