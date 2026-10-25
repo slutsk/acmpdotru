@@ -2378,11 +2378,11 @@
 200	https://acmp.ru/?main=task&id_task=2378
 200	https://acmp.ru/?main=task&id_task=2379
 200	https://acmp.ru/?main=task&id_task=2380
-200	https://acmp.ru/?main=task&id_task=2381
-200	https://acmp.ru/?main=task&id_task=2382
-200	https://acmp.ru/?main=task&id_task=2383
-200	https://acmp.ru/?main=task&id_task=2384
-200	https://acmp.ru/?main=task&id_task=2385
+5	https://acmp.ru/?main=task&id_task=2381
+12	https://acmp.ru/?main=task&id_task=2382
+30	https://acmp.ru/?main=task&id_task=2383
+43	https://acmp.ru/?main=task&id_task=2384
+36	https://acmp.ru/?main=task&id_task=2385
 200	https://acmp.ru/?main=task&id_task=2386
 200	https://acmp.ru/?main=task&id_task=2387
 200	https://acmp.ru/?main=task&id_task=2388
